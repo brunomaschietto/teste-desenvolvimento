@@ -1,4 +1,4 @@
-# **Desafio NeoApp**
+# **Teste Desenvolvimento**
 
 O Teste de Desenvolvimento consiste em desenvolver uma página de produtos para um dos clientes da empresa. As tecnologias utilizadas foram, React.js, Chakra-UI, Styled-Components, React Router Dom.
 
@@ -21,7 +21,7 @@ O Teste de Desenvolvimento consiste em desenvolver uma página de produtos para 
 ![pagina-inicial](./src/assets/telaInicial.png)
 
 ## 🎯 **Demonstração**
-[Link demonstração](https://desafio-neoapp.vercel.app/)
+[Link demonstração](site)
 
 ## 🕹 **Como rodar esse projeto?**
 
