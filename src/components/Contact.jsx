@@ -8,6 +8,7 @@ import iconeYoutube from '../assets/iconeYoutube.png'
 import simboloEureciclo from '../assets/simboloEureciclo.png'
 import seguranca from '../assets/seguranca.png'
 import cartoes from '../assets/cartoes.png'
+import correios from '../assets/correios.png'
 
 const Contact = () => {
   return (
@@ -56,6 +57,7 @@ const Contact = () => {
                 <Text color={'#83bdd6'}>Formas de pagamento</Text>
                 <Image src={cartoes}/>
                 <Text color={'#83bdd6'}>Formas de envio</Text>
+                <Image src={correios}/>
             </Flex>
         </Flex>
         <Divider />

@@ -8,6 +8,7 @@ import Cleaning from '../components/Cleaning'
 import PolicleanInfo from '../components/PolicleanInfo'
 import AlcoolInfo from '../components/AlcoolInfo'
 import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 const ProductsPage = () => {
   return (
@@ -20,6 +21,7 @@ const ProductsPage = () => {
         <PolicleanInfo />
         <AlcoolInfo />
         <Contact />
+        <Footer />
     </Flex>
   )
 }

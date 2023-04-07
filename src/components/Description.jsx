@@ -75,8 +75,8 @@ const Description = () => {
         src={galaoCapa}
         position={"absolute"}
         height={"900px"}
-        top={"800px"}
-        left={"650px"}
+        top={"13%"}
+        left={"38%"}
       />
       <Flex
         position={"absolute"}
