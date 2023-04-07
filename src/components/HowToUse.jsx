@@ -1,5 +1,6 @@
-import { Box, Card, Flex, Text } from "@chakra-ui/react";
+import { Box, Card, Flex, Image, Text } from "@chakra-ui/react";
 import React from "react";
+import diluicao from "../assets/diluicao.png";
 
 const HowToUse = () => {
   return (
@@ -152,8 +153,187 @@ const HowToUse = () => {
           </Text>
         </Card>
       </Flex>
-      <Flex border={'1px solid #004c98'}>
-
+      <Flex
+        border={"1px solid #004c98"}
+        width={"1298px"}
+        flexDirection={"column"}
+        position={"relative"}
+        borderRadius={"8px"}
+        gap={'30px'}
+      >
+        <Flex backgroundColor={"#84bed6"} width={'80px'} position={'absolute'} top={'-16px'} left={'600px'} alignItems={'center'} justifyContent={'center'}>
+          <Text color={'#004c98'} as={'b'} fontSize={'xl'}>Diluição</Text>
+        </Flex>
+        <Flex flexDirection={"column"} padding={'50px'}>
+        <Flex justifyContent={"space-around"}>
+          <Text color={"#004c98"} as={"b"}>
+            LIMPEZA PESADA ATÉ
+          </Text>
+          <Text color={"#004c98"} as={"b"}>
+            LIMPEZA MÉDIA ATÉ
+          </Text>
+          <Text color={"#004c98"} as={"b"}>
+            LIMPEZA LEVE ATÉ
+          </Text>
+        </Flex>
+        <Image src={diluicao} />
+        <Flex justifyContent={"space-around"}>
+          <Flex width={"205px"} justifyContent={"space-between"}>
+            <Flex
+              backgroundColor={"white"}
+              borderRadius={"25px"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              height={"45px"}
+              width={"45px"}
+            >
+              <Text as={"b"} color={"#004c98"}>
+                01
+              </Text>
+            </Flex>
+            <Flex
+              backgroundColor={"white"}
+              borderRadius={"25px"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              height={"45px"}
+              width={"45px"}
+            >
+              <Text as={"b"} color={"#004c98"}>
+                04
+              </Text>
+            </Flex>
+          </Flex>
+          <Flex width={"205px"} justifyContent={"space-between"}>
+            <Flex
+              backgroundColor={"white"}
+              borderRadius={"25px"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              height={"45px"}
+              width={"45px"}
+            >
+              <Text as={"b"} color={"#004c98"}>
+                01
+              </Text>
+            </Flex>
+            <Flex
+              backgroundColor={"white"}
+              borderRadius={"25px"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              height={"45px"}
+              width={"45px"}
+            >
+              <Text as={"b"} color={"#004c98"}>
+                06
+              </Text>
+            </Flex>
+          </Flex>
+          <Flex width={"205px"} justifyContent={"space-between"}>
+            <Flex
+              backgroundColor={"white"}
+              borderRadius={"25px"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              height={"45px"}
+              width={"45px"}
+            >
+              <Text as={"b"} color={"#004c98"}>
+                01
+              </Text>
+            </Flex>
+            <Flex
+              backgroundColor={"white"}
+              borderRadius={"25px"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              height={"45px"}
+              width={"45px"}
+            >
+              <Text as={"b"} color={"#004c98"}>
+                10
+              </Text>
+            </Flex>
+          </Flex>
+        </Flex>
+        <Flex justifyContent={"space-around"}>
+          <Flex
+            height={"30px"}
+            border={"1px solid white"}
+            width={"100px"}
+            borderRadius={"25px"}
+            justifyContent={"center"}
+            alignItems={"center"}
+          >
+            <Text as={"b"} color={"white"}>
+              250ml/L
+            </Text>
+          </Flex>
+          <Flex
+            height={"30px"}
+            border={"1px solid white"}
+            width={"100px"}
+            borderRadius={"25px"}
+            justifyContent={"center"}
+            alignItems={"center"}
+          >
+            <Text as={"b"} color={"white"}>
+              166ml/L
+            </Text>
+          </Flex>
+          <Flex
+            height={"30px"}
+            border={"1px solid white"}
+            width={"100px"}
+            borderRadius={"25px"}
+            justifyContent={"center"}
+            alignItems={"center"}
+          >
+            <Text as={"b"} color={"white"}>
+              100ml/L
+            </Text>
+          </Flex>
+        </Flex>
+        </Flex>
+        <Flex justifyContent={'center'} paddingBottom={'30px'}>
+          <Flex
+            width={"500px"}
+            border={"1px solid #004c98"}
+            height={"35px"}
+            justifyContent={"space-around"}
+            alignItems={"center"}
+            borderRadius={"20px"}
+          >
+            <Text as={"b"} color={"#004c98"} fontSize={"sm"}>
+              PROPORÇÃO:
+            </Text>
+            <Flex gap={"30px"}>
+              <Flex gap={"8px"}>
+                <Card
+                  height={"25px"}
+                  width={"25px"}
+                  borderRadius={"20px"}
+                  backgroundColor={"#ff366a"}
+                ></Card>
+                <Text as={"b"} color={"#004c98"} fontSize={"sm"}>
+                  PRODUTO
+                </Text>
+              </Flex>
+              <Flex gap={"8px"}>
+                <Card
+                  height={"25px"}
+                  width={"25px"}
+                  borderRadius={"20px"}
+                  backgroundColor={"#00f5ff"}
+                ></Card>
+                <Text as={"b"} color={"#004c98"} fontSize={"sm"}>
+                  ÁGUA
+                </Text>
+              </Flex>
+            </Flex>
+          </Flex>
+        </Flex>
       </Flex>
     </Flex>
   );
