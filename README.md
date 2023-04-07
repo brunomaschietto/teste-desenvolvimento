@@ -21,7 +21,7 @@ O Teste de Desenvolvimento consiste em desenvolver uma página de produtos para 
 ![pagina-inicial](./src/assets/telaInicial.png)
 
 ## 🎯 **Demonstração**
-[Link demonstração](site)
+[Link demonstração](https://teste-desenvolvimento.vercel.app/)
 
 ## 🕹 **Como rodar esse projeto?**
 
