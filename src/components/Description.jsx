@@ -2,6 +2,9 @@ import { Flex, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import piso from "../assets/piso.jpg";
 import galaoCapa from "../assets/mockup-com-capa.png";
+import bolaPiso from "../assets/bolaPiso.png";
+import paNuvem from "../assets/paNuvem.png";
+import gota from "../assets/gota.png";
 
 const Description = () => {
   return (
@@ -9,12 +12,17 @@ const Description = () => {
       <Flex
         width={"50%"}
         backgroundColor={"#004c98"}
-        height={"900px"}
+        height={"950px"}
         flexDirection={"column"}
         position={"relative"}
       >
         <Flex flexDirection={"column"} gap={"80px"}>
-          <Flex flexDirection={"column"} gap={'40px'} alignItems={'center'} paddingTop={'40px'}>
+          <Flex
+            flexDirection={"column"}
+            gap={"40px"}
+            alignItems={"center"}
+            paddingTop={"40px"}
+          >
             <Flex flexDirection={"column"} gap={"16px"}>
               <Heading color={"white"}>O que é?</Heading>
               <Text color={"white"} fontSize={"sm"}>
@@ -45,7 +53,7 @@ const Description = () => {
               </Text>
             </Flex>
           </Flex>
-          <Flex flexDirection={"column"} gap={"16px"} alignItems={'center'}>
+          <Flex flexDirection={"column"} gap={"16px"} alignItems={"center"}>
             <Heading color={"white"}>
               Tipos de superfícies
               <br /> que podem ser tratadas:
@@ -70,18 +78,39 @@ const Description = () => {
         top={"800px"}
         left={"650px"}
       />
-      <Flex position={'absolute'} alignItems={'center'} justifyContent={'space-around'} backgroundColor={'white'} top={'1600px'} left={'250px'} width={'1200px'} height={'100px'} borderRadius={'12px'}>
-        <Flex>
-            <Image />
-            <Text as={'b'} color={'#0c539c'}>EFICAZ NA LIMPEZA DE PISOS<br/> CERÂMICOS, PEDRAS E<br/> PORCELANATOS</Text>
+      <Flex
+        position={"absolute"}
+        alignItems={"center"}
+        justifyContent={"space-around"}
+        backgroundColor={"white"}
+        top={"1600px"}
+        left={"250px"}
+        width={"1200px"}
+        height={"100px"}
+        borderRadius={"12px"}
+      >
+        <Flex alignItems={'center'}>
+          <Image src={bolaPiso} height={'70px'}/>
+          <Text as={"b"} color={"#0c539c"}>
+            EFICAZ NA LIMPEZA DE PISOS
+            <br /> CERÂMICOS, PEDRAS E<br /> PORCELANATOS
+          </Text>
         </Flex>
-        <Flex>
-            <Image />
-            <Text as={'b'} color={'#0c539c'}>EFICAZ NA LIMPEZA DE PISOS<br/> CERÂMICOS, PEDRAS E<br/> PORCELANATOS</Text>
+        <Flex alignItems={'center'}>
+          <Image src={paNuvem} height={'70px'}/>
+          <Text as={"b"} color={"#0c539c"}>
+            REMOVE RESÍDUOS DEIXADOS AO
+            <br /> TÉRMINO DA OBRA
+          </Text>
         </Flex>
-        <Flex>
-            <Image />
-            <Text as={'b'} color={'#0c539c'}>EFICAZ NA LIMPEZA DE PISOS<br/> CERÂMICOS, PEDRAS E<br/> PORCELANATOS</Text>
+        <Flex alignItems={'center'}>
+          <Image src={gota} height={'70px'}/>
+          <Flex flexDirection={'column'}>
+            <Text as={"b"} color={"#0c539c"}>
+              5 LITROS(CONCENTRADO)
+            </Text>
+            <Text color={"#0c539c"}>RENDE ATÉ 50 LITROS</Text>
+          </Flex>
         </Flex>
       </Flex>
     </Flex>

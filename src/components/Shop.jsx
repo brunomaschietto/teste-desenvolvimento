@@ -9,7 +9,15 @@ import {
   Flex,
   Heading,
   Image,
+  Table,
+  TableCaption,
+  TableContainer,
+  Tbody,
+  Td,
   Text,
+  Th,
+  Thead,
+  Tr,
 } from "@chakra-ui/react";
 import React from "react";
 import galao5L from "../assets/mockup_super_pos_obra_principal_5l.png";
@@ -18,7 +26,7 @@ import estrelas from "../assets/estrelas.png";
 
 const Shop = () => {
   return (
-    <Flex flexDirection={"column"} alignItems={'center'} justifyContent={'center'} width={'1400px'} margin={'0 auto'}>
+    <Flex flexDirection={"column"} alignItems={'center'} justifyContent={'center'} width={'1400px'} margin={'0 auto'} paddingBottom={'60px'}>
       <Flex gap={"5px"} alignSelf={'start'} paddingTop={"16px"}>
         <Text fontSize="xs">Home</Text>
         <Text fontSize="xs">|</Text>
@@ -144,7 +152,7 @@ const Shop = () => {
                     CALCULAR
                   </Text>
                 </Flex>
-                <Flex flexDirection={'column'} width={'175%'}>
+                {/* <Flex flexDirection={'column'} width={'175%'}>
                   <Flex backgroundColor={"gray.200"} height={"30px"} justifyContent={'space-around'} alignItems={'center'}>
                     <Text as={"b"} fontSize={"xs"}>
                       Frete
@@ -178,7 +186,42 @@ const Shop = () => {
                       2 a 3 dias úteis
                     </Text>
                   </Flex>
-                </Flex>
+                </Flex> */}
+                <TableContainer>
+                  <Table size={'sm'} variant='simple'>
+                  <Thead>
+                    <Tr backgroundColor={'gray.200'}>
+                      <Th>Frete</Th>
+                      <Th>Valor</Th>
+                      <Th>Prazo</Th>
+                    </Tr>
+                  </Thead>
+                  <Tbody>
+                    <Tr backgroundColor={'gray.100'}>
+                      <Td>
+                        CORREIOS PAC
+                      </Td>
+                      <Td>
+                        R$ 22,49
+                      </Td>
+                      <Td>
+                        5 A 6 dias úteis.
+                      </Td>
+                    </Tr>
+                    <Tr backgroundColor={'gray.200'}>
+                      <Td>
+                        CORREIOS SEDEX
+                      </Td>
+                      <Td>
+                        R$ 31,72
+                      </Td>
+                      <Td>
+                        2 a 3 dias úteis.
+                      </Td>
+                    </Tr>
+                  </Tbody>
+                  </Table>
+                </TableContainer>
               </Flex>
             </CardFooter>
           </Card>
